@@ -1,2 +1,10 @@
-<ag-grid-angular [rowData]="rowData"
-                 [columnDefs]="colDefs" />
+@if (isBrowser)
+{
+<ag-grid-angular class="ag-theme-quartz test-grid"
+                 [rowData]="rowData"
+                 [columnDefs]="colDefs"
+                 [defaultColDef]="defaultColDef"
+                 [pagination]="true"
+                 [paginationPageSize]="pagin"
+                 [paginationPageSizeSelector]="paginar" />
+}
