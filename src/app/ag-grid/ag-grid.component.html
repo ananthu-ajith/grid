@@ -1,0 +1,15 @@
+<p>ag-grid works!</p>
+
+@if (isBrowser)
+{
+<ag-grid-angular class="ag-theme-quartz test-grid"
+                 [rowData]="rowData"
+                 [columnDefs]="colDefs"
+                 [defaultColDef]="defaultColDef"
+                 [pagination]="true"
+                 [paginationPageSize]="pagin"
+                 [paginationPageSizeSelector]="paginar" />
+}
+@else {
+<p>No Grid Available</p>
+}

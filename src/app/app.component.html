@@ -1,10 +1,14 @@
-@if (isBrowser)
-{
-<ag-grid-angular class="ag-theme-quartz test-grid"
-                 [rowData]="rowData"
-                 [columnDefs]="colDefs"
-                 [defaultColDef]="defaultColDef"
-                 [pagination]="true"
-                 [paginationPageSize]="pagin"
-                 [paginationPageSizeSelector]="paginar" />
-}
+<div>
+    <nav>
+        <ul>
+            <li><a routerLink="grid"
+                   routerLinkActive="active">Ag Grid</a></li>
+            <li><a routerLink="froala"
+                   routerLinkActive="active">Froala</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+<router-outlet></router-outlet>
