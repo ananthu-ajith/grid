@@ -6,7 +6,8 @@ import { AgGridComponent } from './ag-grid/ag-grid.component';
 export const routes: Routes = [
   {
     path: 'froala',
-    component: FroalaComponent,
+    loadComponent: () =>
+      import('./froala/froala.component').then((c) => c.FroalaComponent),
   },
   {
     path: 'grid',
